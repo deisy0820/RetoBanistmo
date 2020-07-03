@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
-import userinterfaces.CrmHome;
+import userinterfaces.HomeBanistmo;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -20,7 +20,7 @@ private PageObject page;
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Open.browserOn(page));
 	}
-	public static OpenTheBrowser at(CrmHome page) {
+	public static OpenTheBrowser at(HomeBanistmo page) {
 		return instrumented(OpenTheBrowser.class, page) ;
 	}
 }

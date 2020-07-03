@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 import task.*;
-import userinterfaces.CrmHome;
+import userinterfaces.HomeBanistmo;
 
 public class storeStepdefinitions {
 
@@ -16,24 +16,22 @@ public class storeStepdefinitions {
     private WebDriver herBrowser;
 
     private Actor user = Actor.named("usuario");
-    private CrmHome crmHome;
+    private HomeBanistmo homeBanistmo;
 
     @Given("^that user enter to page$")
     public void that_user_enter_to_page() throws Exception {
         user.can(BrowseTheWeb.with(herBrowser));
-        user.attemptsTo(OpenTheBrowser.at(crmHome));
+        user.attemptsTo(OpenTheBrowser.at(homeBanistmo));
     }
 
-    @When("^He enter new address a ti the account$")
-    public void he_enter_new_address_a_ti_the_account() throws Exception {
-        user.attemptsTo(EnterPackage.is());
-        user.attemptsTo(EnterFlyAccomodation.is());
-        user.attemptsTo(EnterStarFour.is());
+    @When("^He click fees deposit rates$")
+    public void he_click_fees_deposit_rates() throws Exception {
+        user.attemptsTo(EnterTariff.is());
 
     }
 
-    @Then("^He validate that the address was added$")
-    public void he_validate_that_the_address_was_added() throws Exception {
+    @Then("^He validate PDF$")
+    public void he_validate_PDF() throws Exception {
 
     }
 

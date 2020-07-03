@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -28,7 +29,7 @@
   </component>
   <component name="ProjectId" id="1e6seKLK1NJUg0yqLCfV2TKzCTZ" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../reto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../cosas_de_escritorio/Retos_Pagina_Metro/ProductoScreemplay" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
